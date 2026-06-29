@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------
+   Fondo CSS de respaldo para la historia.
+   Se usa cuando NO existe public/fondo.png.
+   Simula una pared de hormigón minimalista premium con suelo claro.
+---------------------------------------------------------------- */
+.story-bg-fallback {
+  background-color: #E9E3D7;
+  background-image:
+    /* suelo más claro en la parte baja */
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(244, 240, 232, 0.55) 78%,
+      rgba(248, 245, 238, 0.9) 100%
+    ),
+    /* viñeta sutil para dar profundidad */
+    radial-gradient(
+      120% 80% at 50% 38%,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(207, 198, 182, 0.0) 55%
+    ),
+    /* líneas verticales sutiles tipo hormigón */
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      rgba(0, 0, 0, 0.02) 1px,
+      rgba(0, 0, 0, 0) 1px,
+      rgba(0, 0, 0, 0) 140px
+    ),
+    /* degradado base cálido */
+    linear-gradient(160deg, #EEE8DC 0%, #E4DDCF 50%, #D9D1C1 100%);
+}
+
+/* Sombra de contacto bajo el coche (elipse difusa) */
+.car-shadow {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(26, 23, 20, 0.28) 0%,
+    rgba(26, 23, 20, 0.12) 45%,
+    rgba(26, 23, 20, 0) 72%
+  );
+  filter: blur(6px);
+}
+
+/* Rango (sliders) con estética sobria */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 9999px;
+  background: #d4d4d4;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #1A1714;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #1A1714;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
