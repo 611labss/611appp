@@ -9,6 +9,7 @@ export type Background = { id: string; label: string; src: string };
 export const BACKGROUNDS: Background[] = [
   { id: "fondo", label: "Fondo 1", src: "/fondo.png" },
   { id: "fondo2", label: "Fondo 2", src: "/fondo2.png" },
+  { id: "fondo3", label: "Fondo 3", src: "/fondo3.png" },
 ];
 
 type Props = {
