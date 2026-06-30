@@ -7,9 +7,9 @@ export type Background = { id: string; label: string; src: string };
 // 🔧 Añade aquí los fondos que tengas en /public.
 // Para usar un fondo nuevo: copia el PNG a la carpeta public/ y añade una línea.
 export const BACKGROUNDS: Background[] = [
-  { id: "fondo", label: "Fondo 1", src: "/fondo.png" },
-  { id: "fondo2", label: "Fondo 2", src: "/fondo2.png" },
-  { id: "fondo3", label: "Fondo 3", src: "/fondo3.png" },
+  { id: "fondo", label: "HISTORIA GSCARS", src: "/fondo.png" },
+  { id: "fondo2", label: "RIERA RACING", src: "/fondo2.png" },
+  { id: "fondo3", label: "COCHESNET GSCARS", src: "/fondo3.png" },
 ];
 
 type Props = {
