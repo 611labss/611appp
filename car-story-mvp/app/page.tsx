@@ -211,10 +211,10 @@ export default function Page() {
     <main className="mx-auto min-h-screen max-w-7xl px-4 py-8 lg:px-8">
       <header className="mb-8">
         <h1 className="font-display text-3xl tracking-tight">
-          Car Story <span className="text-neutral-400">MVP</span>
+          611 <span className="text-neutral-400">Photoroom</span>
         </h1>
         <p className="mt-1 text-sm text-neutral-500">
-          Genera fotos de coche sobre tus plantillas, en local.
+          Genera fotos de tu negocio es SEGUNDOS
         </p>
       </header>
 
